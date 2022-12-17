@@ -21,7 +21,7 @@ public class Delete_Crime_Criminal_Usecase {
 		CrimeAndCrimianal_information crime = new CrimeAndCrimianal_information();
 
 		crime.setCrimeId(id);
-		;
+		
 
 		String result = dao.DeleteCriminal_crime(crime);
 
