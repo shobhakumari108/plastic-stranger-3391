@@ -26,9 +26,10 @@ public class Crime_And_Criminal_Dao_Imp implements Crime_And_Criminal_Dao{
 				PreparedStatement ps = conn.prepareStatement("select c.Criminal_Name, cr.Crime_Name from criminal"
 						+ " c INNER JOIN crime cr INNER JOIN crime_criminal cc ON cc.Crime_id=cr.Crime_id "
 						+ "AND cc.cid=c.cid AND cr.Crime_Name=?");
-//				***************
-				String Crime_Name = null;
-				ps.setString(1, Crime_Name);
+
+				//				***************
+//				String Crime_Name = null;
+				ps.setString(1, Criminal_Name);
 //				***********************
 				ResultSet rs = ps.executeQuery();
 				while (rs.next())

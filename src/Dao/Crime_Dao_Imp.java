@@ -152,8 +152,8 @@ public  class Crime_Dao_Imp implements Crime_Dao{
 		{
 			PreparedStatement ps = conn.prepareStatement("select * from crime where cplace=?");
 //**********************
-			String n = null;
-			ps.setString(1, n);
+			
+			ps.setString(1, s);
 //			*****************************
 
 			ResultSet rs = ps.executeQuery();
